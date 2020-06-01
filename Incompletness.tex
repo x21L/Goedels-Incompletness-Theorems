@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 % design
 \usetheme{Berlin}
-\usecolortheme{beaver}
+% \usecolortheme{beaver}
 % informations
 \title{Gödel's Incompletness Theorems}
 \author{Lukas Wais}
@@ -28,13 +28,32 @@
 \begin{frame}
 	\frametitle{Kurt Gödel}
 \end{frame}
+\begin{frame}
+	\frametitle{A quick reminder of Axioms}
+	
+	 \begin{Definition}[Axiom]
+	 	Statements that are true without a formal proof of them. \\ For example:
+	 	\[x = y \land y = z \implies x = z\]
+	  	\begin{center}
+	  		"It is possible to draw a straight line from any point to any other point"
+	  	\end{center}
+	 \end{Definition}
+	 \begin{itemize}
+	 	\item Any mathematical system starts out with a set of axioms
+	 \end{itemize}
+\end{frame}
+
 \subsection{What is Completness?}
 \begin{frame}
-	\frametitle{Completness \& Incompletness}
-	 \begin{theorem}
-         Let $r, s$ be integers such that gcd$(r, s)=1$. 
-        Given integers $a,b$, there exists unique 
-        $x <rs$ such that 
-     \end{theorem} 
+	\frametitle{Completness}
+	 \begin{Definition}[Complete]
+	 	A set of axioms is (syntactically, or negation-) complete if, for any statement in the axioms' language, that statement or its negation is provable from the axioms. \cite{smith}
+	 \end{Definition}
+\end{frame}
+\section{Incompletness and Programming}
+% citations
+\begin{frame}{References}
+    \bibliographystyle{ieeetr}
+    \bibliography{bibfile}
 \end{frame}
 \end{document}
