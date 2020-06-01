@@ -21,15 +21,35 @@
 % title frame
 \frame{\titlepage}
 % table of content
-\begin{frame}
+\begin{frame}[allowframebreaks]
 	\frametitle{Table of Contents}
 	\tableofcontents
 \end{frame}
 % introduction
 \section{Introduction}
 \subsection{Who was Kurt Gödel}
-\begin{frame}
+\begin{frame}[allowframebreaks]
 	\frametitle{Kurt Gödel}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+   			\begin{itemize}
+   				\item Born: April 28, 1906 Brünn, Austria-Hungary
+   				\item Died: January 14, 1978 (aged 71) Princeton, New Jersey, U.S.
+   				\item Alma Mater: University of Vienna
+   				\item Member of the Vienna Circle
+   			\end{itemize}
+   		\end{column}
+		\begin{column}{0.4\textwidth}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.5\textwidth]{img/godel_albert}
+				\caption{Kurt Gödel and Albert Einstein}
+			\end{figure}
+		\end{column}	
+	\end{columns}
+	\begin{block}{Fun fact}
+		Kurt Gödel and Albert Einstein good friends. Although the quite large age difference and different subjects. They used to take walks from and to institute where they were working in Princeton. It was also quite fortuitous that both spoke german.
+	\end{block}
 \end{frame}
 \begin{frame}
 	\frametitle{A quick reminder of Axioms}
@@ -56,9 +76,9 @@
 \subsection{Overview}
 \begin{frame}
 	\frametitle{Gödel's First Incompletness Theorem}
-	\begin{itemize}
-		\item If axioms do not contradict each other and are computably enumerable some statements are true, but cannot be proofed.
-	\end{itemize}
+	\begin{block}{The First Incompletness Theorem}
+		If axioms do not contradict each other and are computably enumerable some statements are true, but cannot be proofed.
+	\end{block}
 	\begin{Definition}[Computably Enumerable Language]
 	A recursively enumerable language is a formal language for which there exists a Turing machine which will enumerate all valid strings of the language.
 	\end{Definition}
@@ -95,7 +115,7 @@
 \begin{frame}
 	\frametitle{Gödel's First Incompletness Theorem}
 	\begin{itemize}
-		\item We start now by saying this equation is false. 
+		\item We start now by saying this statement is false. 
 		\item This means that "This statement is provable from the axioms" is true, but a provable statement must be true.
 		\item So now we have started with something which we assumed was false and now we have deduced that it was actually true. 
 		\item We have got a contradiction.
@@ -244,8 +264,11 @@
 	\frametitle{Gödel's Second Incompletness Theorem}
 	\begin{itemize}
 		\item The first theorem asserts that there is a sentence which is neither provable nor refutable in the theory P under consideration.
-		\item The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
 	\end{itemize}
+	\begin{block}{The Second Incompletness Theorem}
+		The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
+	\end{block}
+
 \end{frame}
 
 \begin{frame}
@@ -399,6 +422,7 @@ function foo (foo : program) {
 
 % citations
 \section{Outro}
+\subsection{Conclusion}
 \begin{frame}
 	\frametitle{The Take Home Messages are}
 	\begin{itemize}
@@ -406,14 +430,16 @@ function foo (foo : program) {
 		\item \textbf{Second theorem:} A consistent math system cannot prove its own consistency.
 		\item Gödel's second theorem placed in doubt the possibility of realizing the most important thesis of the so called \href{https://en.wikipedia.org/wiki/Hilbert\%27s_problems}{\textit{Hilbert programme}}. \cite{bekl}
 	\end{itemize}
-	\begin{frame}
-	\frametitle{Some useful Links if you are interested}
+\end{frame}
+
+\subsection{Useful Links}
+\begin{frame}
+	\frametitle{Further reading if you are interested}
 	\begin{itemize}
 		\item \url{https://plato.stanford.edu/entries/goedel-incompleteness/}
 		\item \url{https://www.scientificamerican.com/article/what-is-goumldels-proof/}
 		\item \url{https://www.researchgate.net/publication/286918416_On_the_philosophical_relevance_of_Godel's_incompleteness_theorems}
 	\end{itemize}
-\end{frame}
 
 \end{frame}
 \begin{frame}{References}
