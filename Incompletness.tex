@@ -5,13 +5,16 @@
 \usepackage{amsfonts}
 % additonal packages
 \usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
 % design
 \usetheme{Berlin}
 % \usecolortheme{beaver}
 % informations
 \title{Gödel's Incompletness Theorems}
 \author{Lukas Wais}
-\institute{Course 326.901}
+\institute{Special Topics Course 326.901}
 \date{\today}
 
 \begin{document}
@@ -30,7 +33,6 @@
 \end{frame}
 \begin{frame}
 	\frametitle{A quick reminder of Axioms}
-	
 	 \begin{Definition}[Axiom]
 	 	Statements that are true without a formal proof of them. \\ For example:
 	 	\[x = y \land y = z \implies x = z\]
@@ -42,7 +44,6 @@
 	 	\item Any mathematical system starts out with a set of axioms
 	 \end{itemize}
 \end{frame}
-
 \subsection{What is Completness?}
 \begin{frame}
 	\frametitle{Completness}
@@ -50,8 +51,192 @@
 	 	A set of axioms is (syntactically, or negation-) complete if, for any statement in the axioms' language, that statement or its negation is provable from the axioms. \cite{smith}
 	 \end{Definition}
 \end{frame}
+% first theorem
+\section{First Incompletness Theorem}
+\subsection{Overview}
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item If axioms do not contradict each other and are computably enumerable some statements are true, but cannot be proofed.
+	\end{itemize}
+	\begin{Definition}[Computably Enumerable Language]
+	A recursively enumerable language is a formal language for which there exists a Turing machine which will enumerate all valid strings of the language.
+	\end{Definition}
+\end{frame}
+\begin{frame}
+\subsection{An Informal Approach}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item \textbf{The goal is to have a set of axioms that is powerful enough to proof everything in mathematics.}
+		\item The status quo is that we have some axioms that are unproofable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system?
+		\item To answer this question we actually have to take a look at the Gödel numbering.
+	\end{itemize}
+\end{frame}
+\begin{frame}
+	\frametitle{Gödel Numbering}
+	\begin{itemize}
+		\item Gödel encoded every axiom with a unique natural number.
+		\item He basically allowed mathematics to talk about itself.
+		\item The so called "Gödelisierung" is not limited to axioms. You can encode every word $\omega$ in a language $L$.
+		\item You can compare this to a modern computer, every text you type is encoded, for example in ASCII. In the end it comes even down to an encoding of $0$s and $1$s.
+	\end{itemize}
+	A short side statement: those numbers can be absolutely huge.
+\end{frame}
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item Now back to our first question.
+		\item We encode now the statement "This statement cannot be proved from the axioms".
+		\item Since we can work with numbers now, we can set up an equation.
+		\item \textbf{Remember} An equation is \textbf{always} true or false, in mathematics.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item We start now by saying this equation is false. 
+		\item This means that "This statement is provable from the axioms" is true, but a provable statement must be true.
+		\item So now we have started with something which we assumed was false and now we have deduced that it was actually true. 
+		\item We have got a contradiction.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item Since we are assuming that mathematics is consistent we cannot have contradictions.
+		\item That means it cannot be false. 
+		\item We now can conclude that it must be true, since an equation must always be true or false.
+		\item Now we reinterpret what it says "This statement cannot be proved from the axioms". We have now a statement that cannot be proofed with the axioms of mathematics.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item This is now really \textbf{important} Within a system of mathematics with certain axioms we found a true statement within there which cannot be proved true with that system. We have proofed by working outside the system and looking in. 
+		\item Since it is true we can add that as an axiom. It is a true statement, so it will not make something which is consistent inconsistent.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's First Incompletness Theorem}
+	\begin{itemize}
+		\item Now back to our question. "Wouldn't it just make sense to add these axioms to our system, that we have a complete system?"
+		\item We have just shown that it would be possible to add new axioms to the system. On the other hand we end up adding endless new axioms to our system. We are stuck in an endless loop.
+	\end{itemize}
+\end{frame}
+
+\subsection{A Modern Approach}
+\begin{frame}
+	\frametitle{A Modern Approach}
+	\begin{itemize}
+		\item Now we are getting more formal and take a look at modern proofs and approaches about the theorem.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Parameters of the Proofs}
+	All of the modern proofs of Gödel's theorem do have the following five parameters: \\ \vspace{0.5cm}
+	\begin{enumerate}
+		\item the choice of a specific basic formal system $T;$
+		\item the choice of a universal computation model on some family U of objects of $T$, where by such a model $I$ mean any mathematically rigorous definition of the notion of a $c.e.$ \footnote[frame]{$c.e. \ldots $ computably enumerable} set of elements of $U$ (or of a computable function from $U$ to $U$);
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Parameters of the Proofs}
+	\begin{enumerate}
+	\setcounter{enumi}{2}
+		\item the choice of a Gödel numbering, that is, an encoding of the syntax of the theory $T$ by objects in $U;$
+		\item a proof of the enumerability of the system $T$ (in the sense of the chosen computation model and the Gödel numbering);
+		\item a presentation of an example of an expressible non-c.e. set (together with the proof of its expressibility and non-enumerability).
+	\end{enumerate}
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Parameters of the Proofs - Examples}
+	To prove Gödel’s theorem, various authors have considered the following computation models: \\
+	\begin{enumerate}
+		\item $c.e.$ sets as projections of primitive recursive relations (Gödel);
+		\item the Herbrand–Gödel computable functions and partial recursive functions (Kleene);
+		\item elementary formal systems (Smullyan);
+		\item Turing machines;
+		\item $\Sigma$-definable relations (Ershov) and others.
+	\end{enumerate}
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Simplified Proofs}
+	We note immediately that many authors of simplified proofs of Gödel's theorem neglect some of these points due to their intuitive clearness, using, as a rule, an informal concept of algorithm and some of the forms of the Church–Turing thesis. For example, the enumerability of the arithmetic PA is intuitively clear. At the same time, an "honest" proof of this statement needs programming in the framework of the chosen computation model, that is, significant technical work in general.
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\subsection{Gödel's Proof}
+\begin{frame}
+	\frametitle{What did Gödel actually do?}
+	\begin{itemize}
+		\item Choosing the apparatus of primitive recursive functions, Gödel managed quite effectively with the problem.
+		\item In our opinion there are still no complete proofs of Gödel’s theorem that are essentially simpler than his own proof.
+	\end{itemize}
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's Plan}
+	This proof is based on the technical notion of $representability$ of a $function$ in a theory $T$ and in the construction of an arithmetical formula asserting its own unprovability. The plan of Gödel's proof can be described as follows: \cite{bekl}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's Plan}
+	\begin{enumerate}
+		\item the proof of the fact that the proof predicate $Prf_T (x, y) $ for the theory $T$ is primitive recursive;
+		\item the proof of the fact that every primitive recursive function is representable in $T$ , which implies the decidability in $T$ of the predicate $Prf_T (x, y);$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's Plan}
+	\begin{enumerate}
+		\item the construction of a formula $\psi$ such that
+		\[ T \vdash \psi \leftrightarrow \neg \operatorname{Pr}_{T}\left(\text{\underline{$^{\lceil} \psi^{\rceil}$}}\right) \]
+		, where $Prf_T(x)$ stands for the provability formula $\exists y Prf_{T}(x, y)$, and where we
+		use the representability in $T$ of the substitution function.
+	\end{enumerate}
+	The proof is completed with the following argument, which shows that if $T$ is $\omega$-consistent, then the formula $\psi$ is unprovable and irrefutable in $T$.
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's Plan}
+	\begin{enumerate}
+		\item the construction of a formula $\psi$ such that
+		\[ T \vdash \psi \leftrightarrow \neg \operatorname{Pr}_{T}\left(\text{\underline{$^{\lceil} \psi^{\rceil}$}}\right) \]
+		, where $Prf_T(x)$ stands for the provability formula $\exists y Prf_{T}(x, y)$, and where we
+		use the representability in $T$ of the substitution function.
+	\end{enumerate}
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+% programming
 \section{Incompletness and Programming}
 % citations
+\section{Outro}
 \begin{frame}{References}
     \bibliographystyle{ieeetr}
     \bibliography{bibfile}

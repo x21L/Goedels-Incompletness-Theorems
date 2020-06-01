@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness.aux
+The style file: ieeetr.bst
+Database file #1: ../bibfile.bib
+You've used 2 entries,
+            1876 wiz_defined-function locations,
+            493 strings with 4037 characters,
+and the built_in function-call counts, 551 in all, are:
+= -- 60
+> -- 8
+< -- 0
++ -- 4
+- -- 2
+* -- 36
+:= -- 81
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 52
+format.name$ -- 2
+if$ -- 136
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 2
+pop$ -- 3
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 38
+swap$ -- 16
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 6
+width$ -- 3
+write$ -- 24
