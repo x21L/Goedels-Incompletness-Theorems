@@ -243,9 +243,27 @@
 \begin{frame}
 	\frametitle{Gödel's Second Incompletness Theorem}
 	\begin{itemize}
+		\item The first theorem asserts that there is a sentence which is neither provable nor refutable in the theory P under consideration.
+		\item The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A not so Formal Explanation}
+	\begin{itemize}
+		\item A consistent math system cannot prove its own consistency.
+		\item Can you remember the first informal proof? We proofed it outside the system of mathematics.
+		\hyperlink{important}{\beamergotobutton{take a look again}}
+	\end{itemize}
+\end{frame}
+
+\subsection{The foo Program}
+\begin{frame}
+	\frametitle{Gödel's Second Incompletness Theorem}
+	\begin{itemize}
 		\item We now try get an understanding of it with a very informal approach.
 		\item For this we take the Halting problem into consideration.
-		\item The Halting problem and the second incompletness theorem.
+		\item The Halting problem and the second incompletness theorem are similar.
 		\item The first theorem says that: any sufficiently expressive math system must be either incomplete or \textbf{inconsistent}.
 		\item In a consistent system we can prove at most one statement. 
 		\item [] For example, if a cow can fly or not.
@@ -255,10 +273,10 @@
 \begin{frame}
 	\frametitle{What we are trying to do now}
 	\begin{enumerate}
-		\item Assume that mathematics is consistent
+		\item Assume that mathematic system is consistent
 		\item Create a program foo
 		\item Analyze foo
-		\item Find out that mathematics is incomplete
+		\item Find out that mathematics system is incomplete
 	\end{enumerate}
 \end{frame}
 
@@ -347,24 +365,6 @@ function foo (foo : program) {
 	\end{itemize}
 \end{frame}
 
-
-\begin{frame}
-	\frametitle{Gödel's Second Incompletness Theorem}
-	\begin{itemize}
-		\item The first theorem asserts that there is a sentence which is neither provable nor refutable in the theory P under consideration.
-		\item The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{A not so Formal Explanation}
-	\begin{itemize}
-		\item A consistent math system cannot prove its own consistency.
-		\item Can you remember the first informal proof? We proofed it outside the system of mathematics.
-		\hyperlink{important}{\beamergotobutton{take a look again}}
-	\end{itemize}
-\end{frame}
-
 \subsection{The Proof}
 \begin{frame}
 	\frametitle{The Parameters of the Proof}
@@ -400,11 +400,21 @@ function foo (foo : program) {
 % citations
 \section{Outro}
 \begin{frame}
-	\frametitle{The two Take Home Messages are}
+	\frametitle{The Take Home Messages are}
 	\begin{itemize}
 		\item \textbf{First theorem:} Any sufficiently expressive math system must be either incomplete or inconsistent.
 		\item \textbf{Second theorem:} A consistent math system cannot prove its own consistency.
+		\item Gödel's second theorem placed in doubt the possibility of realizing the most important thesis of the so called \href{https://en.wikipedia.org/wiki/Hilbert\%27s_problems}{\textit{Hilbert programme}}. \cite{bekl}
 	\end{itemize}
+	\begin{frame}
+	\frametitle{Some useful Links if you are interested}
+	\begin{itemize}
+		\item \url{https://plato.stanford.edu/entries/goedel-incompleteness/}
+		\item \url{https://www.scientificamerican.com/article/what-is-goumldels-proof/}
+		\item \url{https://www.researchgate.net/publication/286918416_On_the_philosophical_relevance_of_Godel's_incompleteness_theorems}
+	\end{itemize}
+\end{frame}
+
 \end{frame}
 \begin{frame}{References}
     \bibliographystyle{ieeetr}

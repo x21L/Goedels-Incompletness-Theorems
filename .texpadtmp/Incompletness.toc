@@ -9,6 +9,7 @@
 \beamer@sectionintoc {3}{Second Incompletness Theorem}{24}{0}{3}
 \beamer@subsectionintoc {3}{1}{Overview}{24}{0}{3}
 \beamer@subsectionintoc {3}{2}{Overview}{25}{0}{3}
-\beamer@subsectionintoc {3}{3}{The Proof}{35}{0}{3}
-\beamer@subsectionintoc {3}{4}{A formal proof}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{The foo Program}{27}{0}{3}
+\beamer@subsectionintoc {3}{4}{The Proof}{35}{0}{3}
+\beamer@subsectionintoc {3}{5}{A formal proof}{36}{0}{3}
 \beamer@sectionintoc {4}{Outro}{37}{0}{4}
