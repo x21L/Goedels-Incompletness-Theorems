@@ -115,7 +115,7 @@
 \begin{frame}
 	\frametitle{Gödel's First Incompletness Theorem}
 	\begin{itemize}
-		\item This is now really \textbf{important} Within a system of mathematics with certain axioms we found a true statement within there which cannot be proved true with that system. We have proofed by working outside the system and looking in. 
+		\item This is now really \textbf{important}: Within a system of mathematics with certain axioms we found a true statement within there which cannot be proved true with that system. We have proofed by working outside the system and looking in. \label{important}
 		\item Since it is true we can add that as an axiom. It is a true statement, so it will not make something which is consistent inconsistent.
 	\end{itemize}
 \end{frame}
@@ -226,17 +226,127 @@
 	If you are interested to see the complete proofs i would suggest to check out the following resources.
 	\begin{itemize}
 		\item Gödel incompleteness theorems and the limits of their applicability. I by L. D. Beklemishev. Pages 29 - 33. \cite{bekl}
-		\item Or you can even take a look a the original paper of Gödel himself. \cite{godel}  
+		\item Or you can even take a look a the original paper of Kurt Gödel himself. \cite{godel}  
 	\end{itemize}
 \end{frame}
 
 \section{Second Incompletness Theorem}
+\subsection{Overview}
 \begin{frame}
 	\frametitle{Gödel's Second Incompletness Theorem}
 	\begin{itemize}
 		\item Now we are going to a look on the mostly overlooked second theorem of Kurt Gödel.
 	\end{itemize}
 \end{frame}
+
+\subsection{Overview}
+\begin{frame}
+	\frametitle{Gödel's Second Incompletness Theorem}
+	\begin{itemize}
+		\item We now try get an understanding of it with a very informal approach.
+		\item For this we take the Halting problem into consideration.
+		\item The Halting problem and the second incompletness theorem.
+		\item The first theorem says that: any sufficiently expressive math system must be either incomplete or \textbf{inconsistent}.
+		\item In a consistent system we can prove at most one statement. 
+		\item [] For example, if a cow can fly or not.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What we are trying to do now}
+	\begin{enumerate}
+		\item Assume that mathematics is consistent
+		\item Create a program foo
+		\item Analyze foo
+		\item Find out that mathematics is incomplete
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Program foo}
+	\begin{itemize}
+		\item foo iterates over every mathematical proof.
+	\end{itemize}
+	\begin{center}
+	  \begin{lstlisting}[frame=single]
+function foo (M : program) {
+  for each proof p {
+    if (p proves M(M) LOOPS) 
+      return;
+    if (p proves M(M) HALTS)
+      loop();
+  }
+}
+   \end{lstlisting}
+   	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Program foo}
+	\begin{itemize}
+		\item What will now happen if we put foo into foo like this foo(foo)?
+	\end{itemize}
+	\begin{center}
+	  \begin{lstlisting}[frame=single]
+function foo (foo : program) {
+  for each proof p {
+    if (p proves foo(foo) LOOPS) 
+      return;
+    if (p proves foo(foo) HALTS)
+      loop();
+  }
+}
+   \end{lstlisting}
+   	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{foo inside foo}
+	\begin{itemize}
+		\item The program now should loop or halt.
+		\item We will now take a look on both possibilities. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Program Loops}
+	\begin{itemize}
+		\item If the program loops we end up here:
+		\begin{center}
+	  \begin{lstlisting}
+    if (p proves foo(foo) LOOPS) 
+      return;
+   \end{lstlisting}
+   	\end{center}
+		\item so foo halts.
+		\item If a program halts there is a proof that it does so (step through the program until it returns).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The Program Halts}
+	\begin{itemize}
+		\item If the program loops we end up here:
+		\begin{center}
+	  \begin{lstlisting}
+    if (p proves foo(foo) HALTS)
+      loop();
+   \end{lstlisting}
+   	\end{center}
+		\item foo loops indefinitely.
+		\item It is approved that the program loops (step through the program until it loops indefinitely).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What does this mean now?}
+	\begin{itemize}
+		\item We have both proofs that the program halts and loops and this contradicts our assumption of consistency. Therefore neither can be true.
+		\item We end up that we cannot prove within our system if foo(foo) loops or halts. Our system is therefore incomplete.
+		\item But what does foo(foo) actually do? It loops over every possible math proof endlessly.
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{Gödel's Second Incompletness Theorem}
@@ -249,7 +359,9 @@
 \begin{frame}
 	\frametitle{A not so Formal Explanation}
 	\begin{itemize}
-		\item A consistent math system cannot prove its own consistency
+		\item A consistent math system cannot prove its own consistency.
+		\item Can you remember the first informal proof? We proofed it outside the system of mathematics.
+		\hyperlink{important}{\beamergotobutton{take a look again}}
 	\end{itemize}
 \end{frame}
 
@@ -263,14 +375,27 @@
 		\item Diagonalization.
 		\item Provability in $T$ of some of the properties of the $Provability$ predicate $Bew_T$.
 	\end{enumerate}
+	Please note that the first four parameters were also used for proofing the first theorem. The fifth one, which is actually harder to prove is the crucial step for the second and stronger theorem.
 	\begin{flushright}
 		\cite{bag}
 	\end{flushright}
 \end{frame}
 
-
-% programming
-\section{Incompletness and Programming}
+\subsection{A formal proof}
+\begin{frame}
+	\frametitle{How to make a formal proof of this}
+	\begin{itemize}
+		\item For a short proof you could use the Zermelo-Fraenkel set theory. The proof was done by T.Jech in 1994.
+	\end{itemize}
+	
+	\begin{Theorem}
+		\[\text{If } ZF \text{ is consistent, then } ZF \nvdash CON(ZF)\]
+	\end{Theorem}
+	
+		\begin{itemize}
+		\item If you are interested in this proof, or some other versions take the following paper into consideration \cite{bag}.
+	\end{itemize}
+\end{frame}
 
 % citations
 \section{Outro}
