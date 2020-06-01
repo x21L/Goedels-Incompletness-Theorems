@@ -209,6 +209,7 @@
 \begin{frame}
 	\frametitle{Gödel's Plan}
 	\begin{enumerate}
+	\setcounter{enumi}{2}
 		\item the construction of a formula $\psi$ such that
 		\[ T \vdash \psi \leftrightarrow \neg \operatorname{Pr}_{T}\left(\text{\underline{$^{\lceil} \psi^{\rceil}$}}\right) \]
 		, where $Prf_T(x)$ stands for the provability formula $\exists y Prf_{T}(x, y)$, and where we
@@ -221,22 +222,65 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Gödel's Plan}
+	\frametitle{Dive Deeper}
+	If you are interested to see the complete proofs i would suggest to check out the following resources.
+	\begin{itemize}
+		\item Gödel incompleteness theorems and the limits of their applicability. I by L. D. Beklemishev. Pages 29 - 33. \cite{bekl}
+		\item Or you can even take a look a the original paper of Gödel himself. \cite{godel}  
+	\end{itemize}
+\end{frame}
+
+\section{Second Incompletness Theorem}
+\begin{frame}
+	\frametitle{Gödel's Second Incompletness Theorem}
+	\begin{itemize}
+		\item Now we are going to a look on the mostly overlooked second theorem of Kurt Gödel.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gödel's Second Incompletness Theorem}
+	\begin{itemize}
+		\item The first theorem asserts that there is a sentence which is neither provable nor refutable in the theory P under consideration.
+		\item The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A not so Formal Explanation}
+	\begin{itemize}
+		\item A consistent math system cannot prove its own consistency
+	\end{itemize}
+\end{frame}
+
+\subsection{The Proof}
+\begin{frame}
+	\frametitle{The Parameters of the Proof}
 	\begin{enumerate}
-		\item the construction of a formula $\psi$ such that
-		\[ T \vdash \psi \leftrightarrow \neg \operatorname{Pr}_{T}\left(\text{\underline{$^{\lceil} \psi^{\rceil}$}}\right) \]
-		, where $Prf_T(x)$ stands for the provability formula $\exists y Prf_{T}(x, y)$, and where we
-		use the representability in $T$ of the substitution function.
+		\item Recursive arithmetization of the syntax of the language of $T$.
+		\item $\Sigma_1$-definability of the recursively enumerable predicates.
+		\item Provability in $T$ of true $\Sigma_1$ sentences of the language of arithmetic.
+		\item Diagonalization.
+		\item Provability in $T$ of some of the properties of the $Provability$ predicate $Bew_T$.
 	\end{enumerate}
 	\begin{flushright}
-		\cite{bekl}
+		\cite{bag}
 	\end{flushright}
 \end{frame}
 
+
 % programming
 \section{Incompletness and Programming}
+
 % citations
 \section{Outro}
+\begin{frame}
+	\frametitle{The two Take Home Messages are}
+	\begin{itemize}
+		\item \textbf{First theorem:} Any sufficiently expressive math system must be either incomplete or inconsistent.
+		\item \textbf{Second theorem:} A consistent math system cannot prove its own consistency.
+	\end{itemize}
+\end{frame}
 \begin{frame}{References}
     \bibliographystyle{ieeetr}
     \bibliography{bibfile}

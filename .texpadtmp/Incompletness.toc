@@ -6,5 +6,7 @@
 \beamer@subsectionintoc {2}{2}{An Informal Approach}{7}{0}{2}
 \beamer@subsectionintoc {2}{3}{A Modern Approach}{14}{0}{2}
 \beamer@subsectionintoc {2}{4}{Gödel's Proof}{19}{0}{2}
-\beamer@sectionintoc {3}{Incompletness and Programming}{22}{0}{3}
-\beamer@sectionintoc {4}{Outro}{22}{0}{4}
+\beamer@sectionintoc {3}{Second Incompletness Theorem}{24}{0}{3}
+\beamer@subsectionintoc {3}{1}{The Proof}{27}{0}{3}
+\beamer@sectionintoc {4}{Incompletness and Programming}{28}{0}{4}
+\beamer@sectionintoc {5}{Outro}{28}{0}{5}

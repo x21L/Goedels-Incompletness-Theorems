@@ -10,4 +10,13 @@ L.~D. Beklemishev, ``G{\"o}del incompleteness theorems and the limits of their
   applicability. i,'' {\em Russian Mathematical Surveys}, vol.~65, no.~5,
   p.~857, 2010.
 
+\bibitem{godel}
+K.~G{\"o}del, ``{\"U}ber formal unentscheidbare s{\"a}tze der principia
+  mathematica und verwandter systeme i,'' {\em Monatshefte f{\"u}r mathematik
+  und physik}, vol.~38, no.~1, pp.~173--198, 1931.
+
+\bibitem{bag}
+J.~Bagaria, ``A short guide to g{\"o}del's second incompleteness theorem,''
+  {\em Teorema: Revista Internacional de Filosofia}, pp.~5--15, 2003.
+
 \end{thebibliography}
