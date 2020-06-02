@@ -1,4 +1,7 @@
 \documentclass[aspectratio=169]{beamer}
+% setup for the handout
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
 % language and font set up
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -77,7 +80,7 @@
 \begin{frame}
 	\frametitle{Gödel's First Incompletness Theorem}
 	\begin{block}{The First Incompletness Theorem}
-		If axioms do not contradict each other and are computably enumerable some statements are true, but cannot be proofed.
+		Given a set of initial axioms, which are not contradicting each other and also computably enumerable. Then, it is possible to define statements from the same language which are nether provable nor their negations.
 	\end{block}
 	\begin{Definition}[Computably Enumerable Language]
 	A recursively enumerable language is a formal language for which there exists a Turing machine which will enumerate all valid strings of the language.
@@ -88,7 +91,7 @@
 	\frametitle{Gödel's First Incompletness Theorem}
 	\begin{itemize}
 		\item \textbf{The goal is to have a set of axioms that is powerful enough to proof everything in mathematics.}
-		\item The status quo is that we have some axioms that are unproofable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system?
+		\item The status quo is that we have some axioms that are unproveable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system?
 		\item To answer this question we actually have to take a look at the Gödel numbering.
 	\end{itemize}
 \end{frame}
@@ -440,9 +443,10 @@ function foo (foo : program) {
 		\item \url{https://www.scientificamerican.com/article/what-is-goumldels-proof/}
 		\item \url{https://www.researchgate.net/publication/286918416_On_the_philosophical_relevance_of_Godel's_incompleteness_theorems}
 	\end{itemize}
-
 \end{frame}
-\begin{frame}{References}
+
+\subsection{References}
+\begin{frame}
     \bibliographystyle{ieeetr}
     \bibliography{bibfile}
 \end{frame}
