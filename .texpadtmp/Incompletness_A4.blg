@@ -2,7 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness_A4.aux
 The style file: ieeetr.bst
-Illegal, another \bibdata command---line 56 of file /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness_A4.aux
+Illegal, another \bibstyle command---line 50 of file /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness_A4.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 51 of file /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness_A4.aux
  : \bibdata
  :         {bibfile}
 I'm skipping whatever remains of this command
@@ -48,4 +52,4 @@ warning$ -- 0
 while$ -- 14
 width$ -- 5
 write$ -- 44
-(There was 1 error message)
+(There were 2 error messages)
