@@ -1,0 +1,12 @@
+\frametitle{The Program Halts}
+	\begin{itemize}
+		\item If the program loops we end up here:
+		\begin{center}
+	  \begin{lstlisting}
+    if (p proves foo(foo) HALTS)
+      loop();
+   \end{lstlisting}
+   	\end{center}
+		\item foo loops indefinitely.
+		\item It is approved that the program loops (step through the program until it loops indefinitely).
+	\end{itemize}
