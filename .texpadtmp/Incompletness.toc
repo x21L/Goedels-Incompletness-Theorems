@@ -3,16 +3,16 @@
 \beamer@subsectionintoc {1}{2}{What is Completness?}{7}{0}{1}
 \beamer@sectionintoc {2}{First Incompletness Theorem}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Overview}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{An Informal Approach}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{A Modern Approach}{16}{0}{2}
-\beamer@subsectionintoc {2}{4}{Gödel's Proof}{21}{0}{2}
-\beamer@sectionintoc {3}{Second Incompletness Theorem}{26}{0}{3}
-\beamer@subsectionintoc {3}{1}{Overview}{26}{0}{3}
-\beamer@subsectionintoc {3}{2}{Overview}{27}{0}{3}
-\beamer@subsectionintoc {3}{3}{The foo Program}{29}{0}{3}
-\beamer@subsectionintoc {3}{4}{The Proof}{37}{0}{3}
-\beamer@subsectionintoc {3}{5}{A formal proof}{38}{0}{3}
-\beamer@sectionintoc {4}{Outro}{39}{0}{4}
-\beamer@subsectionintoc {4}{1}{Conclusion}{39}{0}{4}
-\beamer@subsectionintoc {4}{2}{Useful Links}{40}{0}{4}
-\beamer@subsectionintoc {4}{3}{References}{41}{0}{4}
+\beamer@subsectionintoc {2}{2}{An Informal Approach}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{A Modern Approach}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Gödel's Proof}{23}{0}{2}
+\beamer@sectionintoc {3}{Second Incompletness Theorem}{30}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview}{30}{0}{3}
+\beamer@subsectionintoc {3}{2}{Overview}{31}{0}{3}
+\beamer@subsectionintoc {3}{3}{The foo Program}{33}{0}{3}
+\beamer@subsectionintoc {3}{4}{The Proof}{41}{0}{3}
+\beamer@subsectionintoc {3}{5}{A formal proof}{42}{0}{3}
+\beamer@sectionintoc {4}{Outro}{43}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusion}{43}{0}{4}
+\beamer@subsectionintoc {4}{2}{Useful Links}{44}{0}{4}
+\beamer@subsectionintoc {4}{3}{References}{45}{0}{4}

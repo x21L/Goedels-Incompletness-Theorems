@@ -6,6 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{mathrsfs}
 % additonal packages
 \usepackage{graphicx}
 \usepackage{color}
@@ -82,16 +83,34 @@
 	\begin{block}{The First Incompletness Theorem}
 		Given a set of initial axioms, which are not contradicting each other and also computably enumerable. Then, it is possible to define statements from the same language which are nether provable nor their negations.
 	\end{block}
-	\begin{Definition}[Computably Enumerable Language]
-	A recursively enumerable language is a formal language for which there exists a Turing machine which will enumerate all valid strings of the language.
-	\end{Definition}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Computably Enumerable}
+	\begin{block}{Computably Enumerable Language}
+	A theory $S=(\Sigma, \mathscr{P})$ is said to be computably enumerable if the signature $\Sigma$ is decidable and the set $\mathscr{P}$ is computably enumerable. Since $\Sigma$ is decidable, so is the set $\mathscr{L}_{\Sigma}$ of all formulae of the given language. When speaking about a computably enumerable theory $S$, we assume that some Turing machines defining $\Sigma$ and $P$ are fixed.
+	\end{block}
+\begin{flushright}
+	\cite{bekl}
+\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Theories}
+	\begin{itemize}
+		\item By theories $S$ we mean first-order theories with equality, that is, theories defined by some signature $\Sigma$ and a set $\mathscr{P}$ of formulae of this signature which is closed under the logical successor (in the first-order predicate logic with equality). The formulae of $\mathscr{P}$ are said to be $provable$ in $S$.
+	\end{itemize}
+\begin{flushright}
+	\cite{bekl}
+\end{flushright}
+\end{frame}
+
 \begin{frame}
 \subsection{An Informal Approach}
 	\frametitle{Gödel's First Incompletness Theorem}
 	\begin{itemize}
 		\item \textbf{The goal is to have a set of axioms that is powerful enough to proof everything in mathematics.}
-		\item The status quo is that we have some axioms that are unproveable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system?
+		\item The status quo is that we have some axioms that are unprovable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system? 
 		\item To answer this question we actually have to take a look at the Gödel numbering.
 	\end{itemize}
 \end{frame}
@@ -239,6 +258,33 @@
 		use the representability in $T$ of the substitution function.
 	\end{enumerate}
 	The proof is completed with the following argument, which shows that if $T$ is $\omega$-consistent, then the formula $\psi$ is unprovable and irrefutable in $T$.
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Some Explanations for the Proof}
+	\begin{Definition}[$\omega$-consistent]
+		A theory $T$ is said to be $\omega$-consistent if there is no formula $varphi$ (where the variable x ranges over the natural numbers) such that the following conditions hold simultaneously:
+		\begin{itemize}
+			\item $T \vdash \exists x \varphi(x)$
+			\item $T \vdash \neg \varphi(\underline{0}), \neg \varphi(\underline{1}), \ldots$
+		\end{itemize}
+	\begin{flushright}
+		\cite{bekl}
+	\end{flushright}
+	\end{Definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Some Explanations for the Proof}
+	For any formula $\psi$ of the language of $T$ denote by $=\varphi \left[\psi \right]$ the formula \underline{$m$}, where $m = ^{\lceil} \psi ^{\rceil}$ stands for the Gödel number of $\psi$. As always, we assume that the Gödel numbering of the formulae is computable.
+	
+	\begin{lemma}
+		Let T be an arithmetical theory containing R. Then for any formula $\psi(x)$ of the language of $T$ there is a formula $\psi$ with the same free variables besides x as those of $\varphi$ such that
+			\[T \vdash \psi \leftrightarrow \varphi[\psi]\]
+	\end{lemma}
 	\begin{flushright}
 		\cite{bekl}
 	\end{flushright}
