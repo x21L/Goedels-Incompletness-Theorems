@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.2)  2 JUN 2020 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.2)  2 JUN 2020 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,7 +913,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
 Package rerunfilecheck Info: File `Incompletness.out' has not changed.
-(rerunfilecheck)             Checksum: 1202368ADF76A3A5E69B8A16DC942880;1106.
+(rerunfilecheck)             Checksum: 4BA54F45BAE62AE62E22B37084FDF855;1108.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -922,13 +922,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21616 strings out of 480476
  408160 string characters out of 5899592
- 700276 words of memory out of 5000000
+ 700291 words of memory out of 5000000
  36963 multiletter control sequences out of 15000+600000
  542911 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,19n,78p,822b,1385s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness.pdf (45 pages, 391637 bytes).
+Output written on /Users/lukas/Documents/University/Gödel/my/TeX/G-del-s-Incompletness-Theorems/.texpadtmp/Incompletness.pdf (45 pages, 391635 bytes).
 PDF statistics:
  3548 PDF objects out of 3580 (max. 8388607)
  3398 compressed objects within 34 object streams

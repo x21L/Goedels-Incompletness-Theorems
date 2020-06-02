@@ -16,7 +16,7 @@
 \usetheme{Berlin}
 % \usecolortheme{beaver}
 % informations
-\title{Gödel's Incompletness Theorems}
+\title{Gödel's Incompleteness Theorems}
 \author{Lukas Wais}
 \institute{Special Topics Course 326.901}
 \date{\today}
@@ -76,11 +76,11 @@
 	 \end{Definition}
 \end{frame}
 % first theorem
-\section{First Incompletness Theorem}
+\section{First Incompleteness Theorem}
 \subsection{Overview}
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
-	\begin{block}{The First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
+	\begin{block}{The First Incompleteness Theorem}
 		Given a set of initial axioms, which are not contradicting each other and also computably enumerable. Then, it is possible to define statements from the same language which are nether provable nor their negations.
 	\end{block}
 \end{frame}
@@ -107,10 +107,10 @@
 
 \begin{frame}
 \subsection{An Informal Approach}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item \textbf{The goal is to have a set of axioms that is powerful enough to proof everything in mathematics.}
-		\item The status quo is that we have some axioms that are unprovable. Wouldn't it just make sense to add these axioms to our system, that we have a complete system? 
+		\item We have rules that allow to make deductions from those axioms, that is how mathematics work. Every time we make these logical deduction we expand the conclusion from those axioms. We can also add new axioms. Unfortunately we have some axioms that are unprovable. Wouldn't it be a good idea to add those statements as axioms in our system to expand what we can prove within mathematics? We are trying to prove that there is a set of axioms from which can deduce all truth of mathematics. 
 		\item To answer this question we actually have to take a look at the Gödel numbering.
 	\end{itemize}
 \end{frame}
@@ -125,7 +125,7 @@
 	A short side statement: those numbers can be absolutely huge.
 \end{frame}
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item Now back to our first question.
 		\item We encode now the statement "This statement cannot be proved from the axioms".
@@ -135,7 +135,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item We start now by saying this statement is false. 
 		\item This means that "This statement is provable from the axioms" is true, but a provable statement must be true.
@@ -145,7 +145,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item Since we are assuming that mathematics is consistent we cannot have contradictions.
 		\item That means it cannot be false. 
@@ -155,7 +155,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item This is now really \textbf{important}: Within a system of mathematics with certain axioms we found a true statement within there which cannot be proved true with that system. We have proofed by working outside the system and looking in. \label{important}
 		\item Since it is true we can add that as an axiom. It is a true statement, so it will not make something which is consistent inconsistent.
@@ -163,9 +163,9 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Gödel's First Incompletness Theorem}
+	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
-		\item Now back to our question. "Wouldn't it just make sense to add these axioms to our system, that we have a complete system?"
+		\item Now back to our question. "Wouldn't it be a good idea to add those statements as axioms in our system to expand what we can prove within mathematics?"
 		\item We have just shown that it would be possible to add new axioms to the system. On the other hand we end up adding endless new axioms to our system. We are stuck in an endless loop.
 	\end{itemize}
 \end{frame}
@@ -299,10 +299,10 @@
 	\end{itemize}
 \end{frame}
 
-\section{Second Incompletness Theorem}
+\section{Second Incompleteness Theorem}
 \subsection{Overview}
 \begin{frame}
-	\frametitle{Gödel's Second Incompletness Theorem}
+	\frametitle{Gödel's Second Incompleteness Theorem}
 	\begin{itemize}
 		\item Now we are going to a look on the mostly overlooked second theorem of Kurt Gödel.
 	\end{itemize}
@@ -310,11 +310,11 @@
 
 \subsection{Overview}
 \begin{frame}
-	\frametitle{Gödel's Second Incompletness Theorem}
+	\frametitle{Gödel's Second Incompleteness Theorem}
 	\begin{itemize}
 		\item The first theorem asserts that there is a sentence which is neither provable nor refutable in the theory P under consideration.
 	\end{itemize}
-	\begin{block}{The Second Incompletness Theorem}
+	\begin{block}{The Second Incompleteness Theorem}
 		The second theorem asserts that for this sentence one can take a formalization in P of the statement that the theory P itself is consistent.
 	\end{block}
 
@@ -331,11 +331,11 @@
 
 \subsection{The foo Program}
 \begin{frame}
-	\frametitle{Gödel's Second Incompletness Theorem}
+	\frametitle{Gödel's Second Incompleteness Theorem}
 	\begin{itemize}
 		\item We now try get an understanding of it with a very informal approach.
 		\item For this we take the Halting problem into consideration.
-		\item The Halting problem and the second incompletness theorem are similar.
+		\item The Halting problem and the second incompleteness theorem are similar.
 		\item The first theorem says that: any sufficiently expressive math system must be either incomplete or \textbf{inconsistent}.
 		\item In a consistent system we can prove at most one statement. 
 		\item [] For example, if a cow can fly or not.
@@ -482,6 +482,16 @@ function foo (foo : program) {
 \end{frame}
 
 \subsection{Useful Links}
+
+\begin{frame}
+	\frametitle{Download the presentation}
+	\begin{itemize}
+		\item You can download this presentation from the following link:
+		\item \url{}
+		\item There you can find the source code of it and also an A4 version. This has the exact same content as the slides, since it was generated from them.
+	\end{itemize}
+\end{frame}
+
 \begin{frame}
 	\frametitle{Further reading if you are interested}
 	\begin{itemize}
