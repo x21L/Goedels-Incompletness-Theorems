@@ -52,7 +52,7 @@
 		\end{column}	
 	\end{columns}
 	\begin{block}{Fun fact}
-		Kurt Gödel and Albert Einstein were good friends. Although the quite large age difference and different subjects. They used to take walks from and to institute where they were working in Princeton. It was also quite fortuitous that both spoke german.
+		Kurt Gödel and Albert Einstein were good friends. Although they had quite a large difference in age and different subjects. They used to take walks from and to institute where they were working in Princeton. It was also quite fortuitous that both spoke german.
 	\end{block}
 \end{frame}
 \begin{frame}
@@ -88,11 +88,8 @@
 \begin{frame}
 	\frametitle{Computably Enumerable}
 	\begin{block}{Computably Enumerable Language}
-	A theory $S=(\Sigma, \mathscr{P})$ is said to be computably enumerable if the signature $\Sigma$ is decidable and the set $\mathscr{P}$ is computably enumerable. Since $\Sigma$ is decidable, so is the set $\mathscr{L}_{\Sigma}$ of all formulae of the given language. When speaking about a computably enumerable theory $S$, we assume that some Turing machines defining $\Sigma$ and $P$ are fixed.
+	A theory $S=(\Sigma, \mathscr{P})$ is said to be computably enumerable if the signature $\Sigma$ is decidable and the set $\mathscr{P}$ is computably enumerable. Since $\Sigma$ is decidable, so is the set $\mathscr{L}_{\Sigma}$ of all formulae of the given language. When speaking about a computably enumerable theory $S$, we assume that some Turing machines defining $\Sigma$ and $P$ are fixed. \cite{bekl}
 	\end{block}
-\begin{flushright}
-	\cite{bekl}
-\end{flushright}
 \end{frame}
 
 \begin{frame}
@@ -110,7 +107,7 @@
 	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item \textbf{The goal is to have a set of axioms that is powerful enough to proof everything in mathematics.}
-		\item We have rules that allow to make deductions from those axioms, that is how mathematics work. Every time we make these logical deduction we expand the conclusion from those axioms. We can also add new axioms. Unfortunately we have some axioms that are unprovable. Wouldn't it be a good idea to add those statements as axioms in our system to expand what we can prove within mathematics? We are trying to prove that there is a set of axioms from which can deduce all truth of mathematics. 
+		\item We have rules that allow to make deductions from those axioms, that is how mathematics work. Every time we make these logical deduction we expand the conclusion from those axioms. It is also possible to add new axioms. Unfortunately we have some axioms that are unprovable. Wouldn't it be a good idea to add those statements as axioms in our system to expand what we can prove within mathematics? We are trying to prove that there is a set of axioms from which can deduce all truth of mathematics. 
 		\item To answer this question we actually have to take a look at the Gödel numbering.
 	\end{itemize}
 \end{frame}
@@ -121,8 +118,8 @@
 		\item He basically allowed mathematics to talk about itself.
 		\item The so called "Gödelisierung" is not limited to axioms. You can encode every word $\omega$ in a language $L$.
 		\item You can compare this to a modern computer, every text you type is encoded, for example in ASCII. In the end it comes even down to an encoding of $0$s and $1$s.
+		\item [] A short side statement: those numbers can be absolutely huge.
 	\end{itemize}
-	A short side statement: those numbers can be absolutely huge.
 \end{frame}
 \begin{frame}
 	\frametitle{Gödel's First Incompleteness Theorem}
@@ -130,7 +127,7 @@
 		\item Now back to our first question.
 		\item We encode now the statement "This statement cannot be proved from the axioms".
 		\item Since we can work with numbers now, we can set up an equation.
-		\item \textbf{Remember} An equation is \textbf{always} true or false, in mathematics.
+		\item \textbf{Remember}: An equation is \textbf{always} true or false in mathematics.
 	\end{itemize}
 \end{frame}
 
@@ -166,7 +163,7 @@
 	\frametitle{Gödel's First Incompleteness Theorem}
 	\begin{itemize}
 		\item Now back to our question. "Wouldn't it be a good idea to add those statements as axioms in our system to expand what we can prove within mathematics?"
-		\item We have just shown that it would be possible to add new axioms to the system. On the other hand we end up adding endless new axioms to our system. We are stuck in an endless loop.
+		\item We have just shown that it would be possible to add new axioms to the system. On the other hand we end up adding endless new axioms to our system. We are stuck in an infinite loop.
 	\end{itemize}
 \end{frame}
 
@@ -204,7 +201,7 @@
 	\frametitle{Parameters of the Proofs - Examples}
 	To prove Gödel’s theorem, various authors have considered the following computation models: \\
 	\begin{enumerate}
-		\item $computably enumerable$ sets as projections of primitive recursive relations (Gödel);
+		\item $computably~enumerable$ sets as projections of primitive recursive relations (Gödel);
 		\item the Herbrand–Gödel computable functions and partial recursive functions (Kleene);
 		\item elementary formal systems (Smullyan);
 		\item Turing machines;
@@ -264,7 +261,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Some Explanations for the Proof}
+	\frametitle{Some Explanations of the Proof}
 	\begin{Definition}[$\omega$-consistent]
 		A theory $T$ is said to be $\omega$-consistent if there is no formula $varphi$ (where the variable x ranges over the natural numbers) such that the following conditions hold simultaneously:
 		\begin{itemize}
@@ -278,7 +275,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Some Explanations for the Proof}
+	\frametitle{Some Explanations of the Proof}
 	For any formula $\psi$ of the language of $T$ denote by $=\varphi \left[\psi \right]$ the formula \underline{$m$}, where $m = ^{\lceil} \psi ^{\rceil}$ stands for the Gödel number of $\psi$. As always, we assume that the Gödel numbering of the formulae is computable.
 	
 	\begin{lemma}
@@ -308,7 +305,6 @@
 	\end{itemize}
 \end{frame}
 
-\subsection{Overview}
 \begin{frame}
 	\frametitle{Gödel's Second Incompleteness Theorem}
 	\begin{itemize}
@@ -486,9 +482,9 @@ function foo (foo : program) {
 \begin{frame}
 	\frametitle{Download the presentation}
 	\begin{itemize}
-		\item You can download this presentation from the following link:
-		\item \url{}
-		\item There you can find the source code of it and also an A4 version. This has the exact same content as the slides, since it was generated from them.
+		\item You can download this presentation with the following link:
+		\item \url{https://github.com/x21L/Goedels-Incompletness-Theorems}
+		\item There you can find the source code of it and also an A4 version. It has the exact same content as the slides, since it was generated from them.
 	\end{itemize}
 \end{frame}
 
